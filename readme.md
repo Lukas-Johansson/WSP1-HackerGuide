@@ -24,6 +24,8 @@ Jag kommer att göra en webbsida som visar hur man använder XSS för att göra 
 
 ---
 
+2023-04-21
+
 Jag göra projektet eftersom det är en roliga läroupplevse hur man ska skapa en websida som lär ut en med hjälp av uppgifter. Jag tycker även det är väldigt viktigt att lära sig om webbsäkerhet och jag tror att det bästa sättet att lära sig är just praktiskt. 
 
 ---
@@ -31,9 +33,14 @@ Jag göra projektet eftersom det är en roliga läroupplevse hur man ska skapa e
 | Veckor | | |
 | ----------- |------------- | -------|
 | 16    | Skapa en grundtanke och börja med lite html samt css för att skapa någon typ av vision. |  
-| 17    | Göra klart htmlen och cssen och börja med databas för att visa hur stored XSS fungerar. |  
+| 17    | Göra klart htmlen och cssen och börja med databas för att visa hur stored XSS fungerar. Databasen kommer inehålla ett login system där man har poäng / achivments som sparas för att flexa på sina vänner. |  
 | 18    | Börja med self XSS för att visa hur XSS kan användas på olika sätt. |  
 | 19    | Mest trodligen så blir det lite achivments och liknande för att ge möjlighet för användaren att få poäng samt mobil anpassning. |  
 | 20    | Göra klart små grejer och fortsätta mobil anpassning. |  
 | 21    | Fixa hosting och PM. |  
+
+## Vad har jag gjort?
+
+Jag har byggt en liten grund av websidan med html och sass samt importerat login systemet ifrån forumet. Har även hittat ett färg schema som var nice. "https://coolors.co/palette/84e3c8-a8e6cf-dcedc1-ffd3b6-ffaaa5-ff8b94-ff7480". Så helt enkelt har installerat och satt upp allt som behövs för att köra sidan och börjat med det grafiska. 
+
 
