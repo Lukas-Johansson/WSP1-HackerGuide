@@ -26,6 +26,7 @@ Jag kommer att göra en webbsida som visar hur man använder XSS för att göra 
 
 Jag göra projektet eftersom det är en roliga läroupplevse hur man ska skapa en websida som lär ut en med hjälp av uppgifter. Jag tycker även det är väldigt viktigt att lära sig om webbsäkerhet och jag tror att det bästa sättet att lära sig är just praktiskt. 
 
+---
 
 | Veckor | | |
 | ----------- |------------- | -------|
