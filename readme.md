@@ -5,7 +5,7 @@ Lukas Johansson
 ## 2023-04-18
 ### Hur?
 
-Jag kommer att använda mig av node, sass, express, mysql och lite sådant roliga verktyg
+Jag kommer att använda mig av node, sass, express, mysql och lite sådant roliga verktyg.
 
 ### Vad?
 
