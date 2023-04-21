@@ -1,0 +1,17 @@
+{% extends "layout.njk" %}
+{% block  content %}
+<main class="register">
+    <h1>Register</h1>
+    <p class="error">{{ error }}</p>
+    <form action="/register" method="POST" class="logform">
+    <label for="username">Username</label>
+    <input type="text" name="username">
+    <label for="password">Password</label>
+    <input type="password" name="password">
+    <label for="passwordConfirmation">Confirm Password</label>
+    <input type="password" name="passwordConfirmation" class="password">
+    <button type="submit" class="password">Register</button>
+    <p>Already have an account? <a href="/login">Login here</a></p>
+    </form>
+</main>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "layout.njk" %}
+{% block content %}
+<main class="login">
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+    <h1>{{ title }}</h1>
+    <form action="/login" method="POST" class="logform">
+    <label for="username">Username</label>
+    <input type="text" name="username">
+    <label for="password">Password</label>
+    <input type="password" name="password" class="password">
+    <button type="submit" class="password">Login</button>
+    </form>
+    <p>don't have an account?<a href="/register"> Register here </a></p>
+</main>
+{% endblock %}
