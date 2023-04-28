@@ -1,0 +1,19 @@
+{% extends "layout.njk" %}
+{% block  content %}
+<main class="storedxsstest">
+    <h1>Welcome to the testing phase of stored xss</h1>
+    <h1>You will be able to test stored xss on this page</h1>
+    <h1>Good luck</h1>
+
+    <form action="/storedxsstest" method="POST">
+        <label for="comment">Comment:</label><br>
+        <input type="text" id="comment" name="comment"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>Here is an example of a stored xss attack:</p>
+    <p><a href="/storedxsstest?comment=%3Cscript%3Ealert(%27XSS%27)%3C/script%3E">/storedxsstest?comment=&lt;script&gt;alert('XSS')&lt;/script&gt;</a></p>
+    <p>When the comment is displayed on the page, the script will be executed.</p>
+
+</main>
+{% endblock %}

@@ -16,7 +16,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #FF7480;
+  color: #d4af37;
 }
 
 body::-webkit-scrollbar {
@@ -32,8 +32,9 @@ body::-webkit-scrollbar {
   justify-content: space-around;
   align-items: center;
   padding: 1rem;
-  background-color: #84E3C8;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+.navbar a {
+  padding: 8px;
 }
 .navbar__button {
   background-color: transparent;
@@ -53,6 +54,7 @@ body::-webkit-scrollbar {
   display: flex;
   gap: 1rem;
   list-style: none;
+  padding-top: 1rem;
 }
 .navbar__collapse > ul > li > a {
   text-decoration: none;
@@ -61,7 +63,7 @@ body::-webkit-scrollbar {
   font-weight: 600;
 }
 .navbar__collapse > ul > li > a:hover {
-  color: #FF7480;
+  color: #d4af37;
 }
 .navbar__collapse--show {
   display: block;
@@ -75,9 +77,9 @@ body::-webkit-scrollbar {
 
 footer {
   padding: 1rem;
-  background-color: #84E3C8;
+  background-color: #0A4D68;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
   position: relative;
   bottom: 0;
@@ -87,13 +89,13 @@ footer {
 }
 
 .logo {
-  width: 30%;
-  height: 30%;
+  width: auto;
+  height: 2.8rem;
   display: block;
 }
 
 .indexhero {
-  color: #FF7480;
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -108,7 +110,8 @@ footer {
 }
 
 .login {
-  background-color: #f1f1f1;
+  background-color: #0A4D68;
+  color: #fff;
   padding: 1.25rem;
   border-radius: 0.625rem;
   width: 100%;
@@ -126,16 +129,9 @@ footer {
   }
 }
 
-.profile {
-  background-color: #fff;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  margin: 1rem;
-}
-
 .register {
-  background-color: #84E3C8;
+  background-color: #0A4D68;
+  color: #fff;
   padding: 1.25rem;
   border-radius: 0.625rem;
   width: 100%;
@@ -153,6 +149,14 @@ footer {
   }
 }
 
+.profile {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem;
+}
+
 .password {
   margin-bottom: 0.6rem;
 }
@@ -160,6 +164,76 @@ footer {
 .logform {
   display: flex;
   flex-direction: column;
+}
+
+.startpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+  z-index: 1;
+}
+
+.startpage__button {
+  background-color: #0A4D68;
+  color: #fff;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  width: 100%;
+  max-width: 25rem;
+  margin: 0.625rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+.startpage__button:hover {
+  background-color: #127faa;
+}
+@media (max-width: 600px) {
+  .startpage__button {
+    width: 90%;
+  }
+}
+
+.startpage_buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  margin-top: auto;
+  z-index: 1;
+  flex-wrap: wrap;
+}
+
+.reflectedxss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+  z-index: 1;
+}
+
+.storedxss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

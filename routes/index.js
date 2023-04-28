@@ -88,6 +88,64 @@ router.get('/logout', async function (req, res, next) {
     }
 });
 
+router.get('/begin', async function (req, res, next) {    
+    if (req.session.login == 1) {
+        res.render('begin.njk', { 
+            title: 'Begin', 
+            user : req.session.username || 0,
+            login : req.session.login || 0
+        });
+    }
+    
+    else {
+        return res.status(401).send('Access denied')
+    }
+});
+
+router.get('/reflectedxss', async function (req, res, next) {    
+    if (req.session.login == 1) {
+        res.render('reflectedxss.njk', { 
+            title: 'Reflected XSS', 
+            user : req.session.username || 0,
+            login : req.session.login || 0
+        });
+    }
+    
+    else {
+        return res.status(401).send('Access denied')
+    }
+});
+
+router.get('/storedxss', async function (req, res, next) {    
+    if (req.session.login == 1) {
+        res.render('storedxss.njk', { 
+            title: 'Stored XSS', 
+            user : req.session.username || 0,
+            login : req.session.login || 0
+        });
+    }
+    
+    else {
+        return res.status(401).send('Access denied')
+    }
+});
+
+router.get('/storedxsstest', async function (req, res, next) {    
+    if (req.session.login == 1) {
+        res.render('storedxsstest.njk', { 
+            title: 'Stored XSS Test', 
+            user : req.session.username || 0,
+            login : req.session.login || 0
+        });
+    }
+    
+    else {
+        return res.status(401).send('Access denied')
+    }
+});
+
+
+
 
 router.get('/crypt/:password', async function (req, res, next) {
     const password = req.params.password

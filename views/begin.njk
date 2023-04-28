@@ -1,0 +1,17 @@
+{% extends "layout.njk" %}
+{% block content %}
+<main class="startpage">
+    <div class="startpage__text">
+        <h1 class="startpage__title">Welcome to the <span class="Startpage__title--highlight">XSS</span> Testing Ground</h1>
+        <p class="startpage__text">This is a simple website to test XSS vulnerabilities.</p>
+        <p class="startpage__text">There are two tasks for you to solve.</p>
+        <p class="startpage__text">These tasks shows the two most common XSS attacks.</p>
+        <p class="startpage__text">If you want to learn more about XSS, check out the <a href="https://owasp.org/www-community/attacks/xss/" class="startpage__link">OWASP</a> website.</p>
+        <p class="startpage__text">Have fun!</p>
+    </div>
+    <div class="startpage_buttons">
+        <a href="/reflectedxss" class="startpage__button">Reflected XSS</a>
+        <a href="/storedxss" class="startpage__button">Stored XSS</a>
+    </div>
+</main>
+{% endblock %}
