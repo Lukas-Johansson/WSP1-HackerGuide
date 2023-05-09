@@ -55,3 +55,17 @@ Nästa vecka så kommer jag jobba för det mesta med själva xss uppgifterna och
 # Något som hindrar mig?
 Inget riktigt kanske blir det i framtiden med databasen och achivments men jag hoppas på att det går realtivt enkelt. 
 
+## 2023-05-09
+
+# Vad har jag gjort?
+
+Jag har fixat en bakgrund till landing pagen och fixat typ text till storedxss delen i förhoppning av att den är läsbar.
+
+# Vad ska jag göra?
+
+Fixa all text med CSS så det faktiskt ser snyggt ut. Skapa utmaningarna. Och skapa delen som går igenom skydd. Samt achivments.
+
+# Något som hindrar mig?
+
+Har inte riktigt stött på några större problem utan måste helt enkelt fortsätta arbeta. 
+

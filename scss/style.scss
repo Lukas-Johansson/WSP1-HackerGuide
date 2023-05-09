@@ -14,6 +14,12 @@ ul {
     margin: 0;
 }
 
+hr {
+    width: 40rem;
+    background-color: black;
+    height: 0.1rem;
+    border: none;
+}
 
 a {
     text-decoration: none; 
@@ -232,10 +238,26 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+    z-index: 1;
+}
+
+storedpagetext {
+    display: flex;
+    padding: 1rem;
     text-align: center;
     position: relative;
     bottom: 0;
     width: 100%;
     margin-top: auto;
     z-index: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.landingpage {
+    background-image: url('/images/triangles.svg');
 }
