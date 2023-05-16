@@ -145,6 +145,34 @@ router.get('/storedxsstest', async function (req, res, next) {
 });
 
 
+router.get('/reflectedxsstest', async function (req, res, next) {    
+    if (req.session.login == 1) {
+        res.render('reflectedxsstest.njk', { 
+            title: 'Reflected XSS', 
+            user : req.session.username || 0,
+            login : req.session.login || 0
+        });
+    }
+    
+    else {
+        return res.status(401).send('Access denied')
+    }
+});
+
+router.get('/reflectedxsstes', async function (req, res, next) {    
+    if (req.session.login == 1) {
+        res.render('reflectedxsstest.njk', { 
+            title: 'Reflected XSS Test', 
+            user : req.session.username || 0,
+            login : req.session.login || 0
+        });
+    }
+    
+    else {
+        return res.status(401).send('Access denied')
+    }
+});
+
 
 
 router.get('/crypt/:password', async function (req, res, next) {
@@ -202,8 +230,5 @@ router.post('/register', async function (req, res, next) {
         return res.render('register.njk', { title: 'Register', error: 'Username must be alphanumeric' });
     }
 });
-
-
-
 
 module.exports = router;

@@ -1,19 +1,17 @@
 {% extends "layout.njk" %}
 {% block  content %}
-<main class="reflectedxss">
-<h1>reflectedxss</h1>
-<p>reflectedxss is a type of XSS where the malicious code is reflected off the server and is executed when the victim visits the page.</p>
-<p>reflectedxss is also known as Persistent XSS.</p>
-<p>reflectedxss is more dangerous than Reflected XSS because the malicious code is reflected off the server and can be executed multiple times.</p>
-<p>reflectedxss is also more difficult to detect than Reflected XSS.</p>
-<p>reflectedxss can be used to steal cookies, session tokens, or other sensitive information, carry out phishing attacks, or perform drive-by-downloads.</p>
-<p>reflectedxss can be prevented by sanitizing user input and encoding output.</p>
-<h2>Example</h2>
-<p>Let's say we have a blog where users can post comments. The comments are reflected off a database and displayed on the page.</p>
-<p>Let's say a user posts the following comment:</p>
-<p><code>&lt;script&gt;alert('XSS')&lt;/script&gt;</code></p>
-<p>When the comment is displayed on the page, the script will be executed.</p>
-<p>Here is an example of a reflectedxss attack:</p>
-<p><a href="/reflectedxss?comment=%3Cscript%3Ealert(%27XSS%27)%3C/script%3E">/reflectedxss?comment=&lt;script&gt;alert('XSS')&lt;/script&gt;</a></p>
+<main class="storedxss">
+    <div class="storedpagetext">
+        <h1>Reflected Xss</h1>
+        <p>Reflectedxss is a type of XSS where the malicious code is reflected off the server and is executed when the victim visits the page.
+        Reflectedxss is also known as Persistent XSS.
+        Reflectedxss is more dangerous than Reflected XSS because the malicious code is reflected off the server and can be executed multiple times.
+        Reflectedxss is also more difficult to detect than Reflected XSS.
+        Reflectedxss can be used to steal cookies, session tokens, or other sensitive information, carry out phishing attacks, or perform drive-by-downloads.
+        Reflectedxss can be prevented by sanitizing user input and encoding output.</p>
+    </div>
+<a href="/reflectedxsstest" class="startpage__button">Time for testing!</a>
+
+
 </main>
 {% endblock %}

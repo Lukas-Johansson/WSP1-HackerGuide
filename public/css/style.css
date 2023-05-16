@@ -222,12 +222,14 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  text-align: center;
   position: relative;
   bottom: 0;
   width: 100%;
   margin-top: auto;
   z-index: 1;
+  width: min(120ch, 100vw);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .storedxss {
@@ -240,19 +242,19 @@ footer {
   width: 100%;
   margin-top: auto;
   z-index: 1;
+  width: min(120ch, 100vw);
+  margin-left: auto;
+  margin-right: auto;
 }
 
-storedpagetext {
+.reflectedxsstest {
+  width: min(120ch, 100vw);
   display: flex;
-  padding: 1rem;
-  text-align: center;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  margin-top: auto;
-  z-index: 1;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin: 10rem;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .landingpage {
