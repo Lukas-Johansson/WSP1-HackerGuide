@@ -69,3 +69,16 @@ Fixa all text med CSS så det faktiskt ser snyggt ut. Skapa utmaningarna. Och sk
 
 Har inte riktigt stött på några större problem utan måste helt enkelt fortsätta arbeta. 
 
+## 2023-05-09
+
+# Vad har jag gjort?
+
+Fixat reflected XSS så man kan faktiskt testa det och gjort klart texten designen för alla delar av sidorna.
+
+# Vad ska jag göra?
+
+Fixa stored versionen och gör klart lite grafiskt.
+
+# Något som hindrar mig?
+
+Inget just nu.
