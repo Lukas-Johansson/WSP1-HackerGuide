@@ -82,3 +82,17 @@ Fixa stored versionen och gör klart lite grafiskt.
 # Något som hindrar mig?
 
 Inget just nu.
+
+## 2023-05-23
+
+# Vad har jag gjort?
+
+Fixat en del mobil samt generella förbättringar i koden och laggt upp projektet på glitch.
+
+# Vad ska jag göra?
+
+Hitta på ett smart sätt att visa stored XSS utan att man förlitar på människan i fråga.
+
+# Något som hindrar mig?
+
+Kommer på ett smart sätt.
