@@ -38,6 +38,7 @@
       <h1>Reflected XSS Demo</h1>
 
       <h2>Enter your message:</h2>
+      <h3>Try using this basic payload Try using this basic payload "iframe src=javascript:alert("XSS")" but add the code in <></h3>
       <input type="text" id="message" name="message">
       <button class="button-64" onclick="executeReflectedXSS()"><span>Submit (Reflected XSS)</span></button>
 
@@ -45,7 +46,7 @@
       <ul id="message-list"></ul>
 
       <button id="explanation-button" class="button-64" onclick="toggleExplanation()"><span>Show Explanation</span></button>
-      <div class="explanation" id="explanation">
+      <div class="explanation" id="exp  lanation">
         <h2>Explanation:</h2>
         <p>
           The "Recent Messages" list displays messages entered by users. These messages can be potentially harmful if they contain malicious code.

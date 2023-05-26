@@ -5,104 +5,6 @@
 <html>
 <head>
   <title>Stored XSS Demo</title>
-  <style>
-
-    
-    .rest{
-       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-    }
-
-    h1, h2 {
-      color: #333;
-    }
-
-    input[type="text"] {
-      padding: 5px;
-      font-size: 16px;
-    }
-
-    .button-64 {
-      align-items: center;
-      background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
-      border: none;
-      border-radius: 8px;
-      box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-      box-sizing: border-box;
-      color: #FFFFFF;
-      display: flex;
-      font-family: Phantomsans, sans-serif;
-      font-size: 20px;
-      justify-content: center;
-      line-height: 1em;
-      max-width: 100%;
-      min-width: 140px;
-      padding: 3px;
-      text-decoration: none;
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-      white-space: nowrap;
-      cursor: pointer;
-      margin-top: 10px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .button-64:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
-      border-radius: 8px;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-
-    .button-64:hover:before {
-      opacity: 1;
-    }
-
-    .button-64 span {
-      position: relative;
-      z-index: 1;
-      transition: 0.3s;
-      padding: 10px;
-      border-radius: 6px;
-      background-color: #333;
-    }
-
-    .button-64:hover span {
-      background-color: transparent;
-    }
-
-    .message {
-      margin-bottom: 10px;
-    }
-
-    .explanation {
-      opacity: 0;
-      transition: opacity 0.5s ease;
-      text-align: center;
-      line-height: 1.5;
-      max-width: 500px;
-      margin-bottom: 20px;
-      color: #666;
-      height: 0;
-      overflow: hidden;
-    }
-
-    .explanation.show {
-      opacity: 1;
-      height: auto;
-      padding: 20px;
-    }
-  </style>
   <script>
     function toggleExplanation() {
       var explanation = document.getElementById('explanation');
@@ -141,6 +43,7 @@
     <h1>Stored XSS Demo</h1>
 
     <h2>Enter your message:</h2>
+    <h3>Try using this basic payload Try using this basic payload "iframe src=javascript:alert("XSS")" but add the code in <></h3>
     <input type="text" id="message" name="message">
     <button class="button-64" onclick="executeStoredXSS()"><span>Submit (Stored XSS)</span></button>
 
