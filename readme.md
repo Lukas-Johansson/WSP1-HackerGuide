@@ -96,3 +96,17 @@ Hitta på ett smart sätt att visa stored XSS utan att man förlitar på männis
 # Något som hindrar mig?
 
 Kommer på ett smart sätt.
+
+## 2023-05-26
+
+# Vad har jag gjort?
+
+Mobil apassning existerar och verkar fungera okej, har fixat så sidan har allt den ska ha förutom achivments men verkar lite kort med tid för det. 
+
+# Vad ska jag göra?
+
+Skriva pm.
+
+# Något som hindrar mig?
+
+Nej.
