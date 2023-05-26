@@ -1,45 +1,65 @@
 {% extends "layout.njk" %}
 {% block  content %}
-<main class="reflectedxsstest">
-    <h1>Welcome to the testing phase for reflected xss</h1>
 
-    <body>
-    <!-- CHAT BAR BLOCK -->
-        <div class="content">
-            <div class="full-chat-block">
-                <!-- Message Container -->
-                <div class="outer-container">
-                    <div class="chat-container">
-                        <!-- Messages -->
-                        <div id="chatbox">
-                            <h5 id="chat-timestamp"></h5>
-                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
-                        </div>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reflected XSS Demo</title>
 
-                        <!-- User input box -->
-                        <div class="chat-bar-input-block">
-                            <div id="userInput">
-                                <input id="textInput" class="input-box" type="text" name="msg"
-                                    placeholder="Tap 'Enter' to send a message">
-                                <p></p>
-                            </div>
+  <script>
+    function toggleExplanation() {
+      var explanation = document.getElementById('explanation');
+      var button = document.getElementById('explanation-button');
 
-                            <div class="chat-bar-icons">
-                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
-                                    onclick="sendButton()"></i>
-                            </div>
-                        </div>
-                        <div id="chat-bar-bottom">
-                            <p></p>
-                        </div>
+      if (explanation.classList.contains('show')) {
+        explanation.classList.remove('show');
+        button.textContent = 'Show Explanation';
+      } else {
+        explanation.classList.add('show');
+        button.textContent = 'Hide Explanation';
+      }
+    }
 
-                    </div>
-                </div>
-            </div>
-        </div>
+    function executeReflectedXSS() {
+      var messageInput = document.getElementById('message');
+      var message = messageInput.value;
+
+      var listItem = document.createElement('li');
+      listItem.innerHTML = message;
+      listItem.classList.add('message');
+
+      var messageList = document.getElementById('message-list');
+      messageList.appendChild(listItem);
+    }
+  </script>
+</head>
+<body>
+  <div class="rest">
+      <h1>Reflected XSS Demo</h1>
+
+      <h2>Enter your message:</h2>
+      <input type="text" id="message" name="message">
+      <button class="button-64" onclick="executeReflectedXSS()"><span>Submit (Reflected XSS)</span></button>
+
+      <h2>Recent Messages:</h2>
+      <ul id="message-list"></ul>
+
+      <button id="explanation-button" class="button-64" onclick="toggleExplanation()"><span>Show Explanation</span></button>
+      <div class="explanation" id="explanation">
+        <h2>Explanation:</h2>
+        <p>
+          The "Recent Messages" list displays messages entered by users. These messages can be potentially harmful if they contain malicious code.
+        </p>
+        <p>
+          The "Submit (Reflected XSS)" button demonstrates the execution of user-entered code in real-time. The message is displayed and executed within the context of the page, but it is not saved or stored.
+        </p>
+        <p>
+          Remember that in a real-world scenario, it's crucial to implement proper input validation, sanitization, and output encoding to prevent XSS vulnerabilities and protect your website and users from potential attacks.
+        </p>
+      </div>
+    </div>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="static/scripts/responses.js"></script>
-<script src="static/scripts/chat.js"></script>
-</main>
+</html>
+
+
 {% endblock %}
