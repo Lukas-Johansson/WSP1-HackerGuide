@@ -35,7 +35,7 @@ Generellt så var det inget som gick jättedåligt men det var lite svårt med d
 
 Jag tycker att projektet var roligt och lärorikt. Jag fick lära mig en hel del nya saker och tekniker för att försöka hålla en sida okej stilren. Jag skulle nog ha behållt samma knapp version på hela sidan och inte börjat exprimentera med nya knappar så långt in på arbetet. Detta ledde till att jag fick lite problem med att få dem att fungera som jag ville. 
 
-Jag skulle även ha börjat med att göra en planering av hur jag skulle lägga upp sidan och vad jag skulle lägga till för att kunna ha en bättre planering av hur jag skulle lägga upp arbetet. Detta skulle ha lett till att jag hade kunnat lägga till mer saker på sidan och fått en bättre struktur på sidan.
+Jag skulle även ha börjat med att göra en bättre planering av hur jag skulle lägga upp sidan och vad jag skulle lägga till för att kunna ha en bättre planering av hur jag skulle lägga upp arbetet. Detta skulle ha lett till att jag hade kunnat lägga till mer saker på sidan och fått en bättre struktur på sidan.
 
 
 
